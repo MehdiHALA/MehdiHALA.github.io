@@ -1,0 +1,215 @@
+<!-- index.html - Personal GitHub Pages site for Mehdi Hala -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehdi Hala · Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1f2937;
+      --accent: #2563eb;
+      --muted: #6b7280;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    nav {
+      background: #f9fafb;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    nav a {
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .timeline {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+    }
+    .timeline-entry {
+      margin-bottom: 2rem;
+    }
+    .timeline-entry h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-entry span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+    }
+    .skill {
+      background: #f3f4f6;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.375rem;
+      text-align: center;
+    }
+    footer {
+      background: #f9fafb;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .contact-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mehdi Hala</h1>
+    <p>Lead Data Engineer · Cloud & Distributed Systems Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Passionate data engineer with a strong background in building scalable
+        data platforms and distributed processing pipelines on Azure & Databricks.
+        I enjoy mentoring teams, automating workflows, and turning raw data into
+        actionable insights.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h3>Lead Data Engineer · Sodexo</h3>
+          <span>June 2023 – Present · Paris, France</span>
+          <p>
+            Leading the development of Sodexo’s Global Data Platform on Databricks,
+            designing ingestion-to-gold pipelines, and mentoring junior engineers.
+          </p>
+        </div>
+        <div class="timeline-entry">
+          <h3>Data Engineer · AXA IM</h3>
+          <span>Oct 2021 – June 2023 · Paris, France</span>
+          <p>
+            Migrated investment data pipelines to Azure Databricks, automated ETLs, and ensured
+            compliance with financial reporting requirements.
+          </p>
+        </div>
+        <div class="timeline-entry">
+          <h3>Data Engineer Intern · ST Microelectronics</h3>
+          <span>Feb 2021 – Sep 2021 · Paris, France</span>
+          <p>
+            Developed Spark Streaming jobs for IoT data processing and optimized
+            data pipelines for cost & performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">Scala</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Spark</div>
+        <div class="skill">Databricks</div>
+        <div class="skill">Azure</div>
+        <div class="skill">DBT</div>
+        <div class="skill">Git</div>
+        <div class="skill">HPC</div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AZ‑104 · Azure Administrator Associate</li>
+        <li>DP‑203 · Azure Data Engineer Associate</li>
+        <li>Databricks Associate Developer for Apache Spark</li>
+        <li>AZ‑900 · Microsoft Azure Fundamentals</li>
+        <li>Databricks Partner Champion (ongoing)</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-links">
+        <a href="mailto:mehdihala7@gmail.com">Email</a> ·
+        <a href="https://github.com/MehdiHALA" target="_blank">GitHub</a> ·
+        <a href="https://linkedin.com/in/mehdihala" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Mehdi Hala. Built with ❤️ using GitHub Pages.</p>
+  </footer>
+
+  <script>
+    // Update footer year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
